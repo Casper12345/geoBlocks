@@ -1,0 +1,8 @@
+#!/bin/bash
+
+clear
+
+echo building application
+
+mvn -q clean install -DskipTests=true
+
