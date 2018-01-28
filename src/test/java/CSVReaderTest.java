@@ -6,7 +6,7 @@ import org.junit.Test;
 public class CSVReaderTest {
 
   @Test
-  public void readFile() throws Exception {
+  public void readFile() {
     CSVReader c = new CSVReader();
     Map<Integer, String> read = c.readFile("TestFile.csv");
 
@@ -16,7 +16,7 @@ public class CSVReaderTest {
   }
 
   @Test
-  public void readFile2() throws Exception {
+  public void readFile2() {
     CSVReader c = new CSVReader();
     Map<Integer, String> read = c.readFile("TestFile.csv");
 
@@ -26,14 +26,14 @@ public class CSVReaderTest {
   }
 
   @Test(expected = CustomException.class)
-  public void readFile3() throws Exception {
+  public void readFile3() {
     CSVReader c = new CSVReader();
     c.readFile("TestdFile.txsdt");
 
   }
 
   @Test(expected = CustomException.class)
-  public void readFile4() throws Exception {
+  public void readFile4()  {
     CSVReader c = new CSVReader();
     c.readFile("BrokenFile.csv");
 
