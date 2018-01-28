@@ -21,7 +21,7 @@ public class CSVReader implements FileReader {
    */
   public Map<Integer, String> readFile(String fileName) throws CustomException {
 
-    List<String[]> parsed = null;
+    List<String[]> parsed;
 
     try (Stream<String> stream = Files.lines(Paths.get(fileName))) {
 
